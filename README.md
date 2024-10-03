@@ -63,7 +63,7 @@ Add screenshots or GIFs to show how your app looks and behaves.
 
 ## 🔗 Live Demo
 
-You can check out the live demo [here](https://mustafa-sayed-m.github.io/StreamVibe/ "Live Demo"){:target="\_blank"}
+You can check out the live demo [here](https://mustafa-sayed-m.github.io/StreamVibe/ "Live Demo")
 
 ## 🤝 Contributing
 
