@@ -55,7 +55,7 @@ To set up and run the project locally, follow these steps:
    npm start
    ```
 
-5. Visit the application: Open your browser and go to [here](http://localhost:3000).
+5. Visit the application: Open your browser and go to [here](http://localhost:3000 "Open Local Host").
 
 ## 📸 Screenshots
 
@@ -63,7 +63,7 @@ Add screenshots or GIFs to show how your app looks and behaves.
 
 ## 🔗 Live Demo
 
-You can check out the live demo [here](https://mustafa-sayed-m.github.io/StreamVibe/).
+You can check out the live demo [here](https://mustafa-sayed-m.github.io/StreamVibe/ "Live Demo"){:target="\_blank"}
 
 ## 🤝 Contributing
 
