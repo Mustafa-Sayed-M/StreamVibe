@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables */
+:root {
+    --primary-color: #e50000;
+    --card-color: #1a1a1a;
+    --gray-color: #999999;
+    --black-color: #0f0f0f;
+    --body-color: #141414;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background-color: var(--primary-color);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+/* Global */
+html,
+body {
+    overflow-x: hidden;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-family: "Manrope", sans-serif;
+}
+
+/* Slider Media */
+.slider-media .swiper-button-prev,
+.slider-media .swiper-button-next {
+    color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--card-color);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.slider-media .swiper-button-prev::after,
+.slider-media .swiper-button-next::after {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Font Awesome 6 Free";
+}
+
+.slider-media .swiper-button-prev::after {
+    content: "\f060";
+}
+
+.slider-media .swiper-button-next::after {
+    content: "\f061";
+}
+
+.slider-media .swiper-pagination {
+    margin-top: 15px;
+    position: relative;
+}
+
+.slider-media .swiper-pagination span {
+    width: 30px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
