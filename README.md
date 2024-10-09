@@ -1,4 +1,4 @@
-# 🎬 Stream Vibe
+# 🎬 Stream Vibe <a href="https://mustafa-sayed-m.github.io/StreamVibe/">( Live Site )</a>
 
 This is a front-end project built with React to display movies and TV shows using the TMDB API. It features dynamic routing, a search functionality, and detailed information pages for each title. The app is designed with a responsive UI and includes optimized performance through lazy loading and animations.
 
