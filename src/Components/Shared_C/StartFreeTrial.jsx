@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { APP_NAME } from '../../Utils/constants';
-import StartFreeTrialImage from '../../Assets/StartFreeTrial.png';
 
 function StartFreeTrial() {
     return (
         <section
             style={{
-                backgroundImage: `url(${StartFreeTrialImage})`,
+                backgroundImage: `url(${process.env.PUBLIC_URL}/assets/global/startFreeTrial.png)`,
                 backgroundSize: "cover",
             }}
             data-aos="fade-down-left"

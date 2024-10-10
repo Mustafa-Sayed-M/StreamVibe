@@ -1,5 +1,4 @@
 import React from 'react';
-import landingImage from '../../../Assets/HomeLanding/Landing.png';
 import Hero from './Components/Hero';
 import TextArea from './Components/TextArea';
 
@@ -7,7 +6,7 @@ function Landing() {
     return (
         <div
             style={{
-                backgroundImage: `url(${landingImage})`,
+                backgroundImage: `url(${process.env.PUBLIC_URL}/assets/home/landingBackground.png)`,
                 backgroundSize: "cover",
                 // boxShadow: "0 0 350px inset #141414"
             }}

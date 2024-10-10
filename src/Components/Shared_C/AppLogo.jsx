@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../Assets/logo.png';
 import { APP_NAME } from '../../Utils/constants';
 
 function AppLogo() {
@@ -10,7 +9,7 @@ function AppLogo() {
             className='flex items-center gap-2 font-medium text-lg'
         >
             <img
-                src={logo}
+                src={`${process.env.PUBLIC_URL}/assets/global/logo.png`}
                 alt='Logo'
                 className='w-8'
             />
