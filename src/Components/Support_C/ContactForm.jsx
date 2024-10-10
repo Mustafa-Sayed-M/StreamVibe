@@ -56,7 +56,7 @@ const validationSchema = {
 
 function ContactForm() {
     return (
-        <div className='contact-form lg:col-span-2'>
+        <div className='contact-form lg:col-span-2 bg-black-color p-3 rounded-md'>
             <Formik
                 initialValues={initialValues}
                 validationSchema={Yup.object(validationSchema)}
@@ -106,7 +106,7 @@ function ContactForm() {
                             </div>
                         </div>
                         {/* Submit */}
-                        <div className='flex items-center justify-between'>
+                        <div className='flex max-md:flex-col gap-4 items-center justify-between'>
 
                             {/* Submit Checkbox Terms */}
                             <div className='submit-checkbox-terms flex items-center gap-2 relative' data-aos="fade-up" data-aos-delay={250}>
@@ -119,7 +119,7 @@ function ContactForm() {
                                 <div className='w-5 rounded-md h-5 absolute left-0 top-1/2 -translate-y-1/2 scale-0 rotate-180 peer-checked:rotate-0 peer-checked:scale-100 transition text-xs flex items-center justify-center'>
                                     <i className="fa-solid fa-check"></i>
                                 </div>
-                                <label htmlFor='terms' className='select-none text-gray-400 font-medium cursor-pointer'>I agree with Terms of Use and Privacy Policy</label>
+                                <label htmlFor='terms' className='select-none text-gray-400 font-medium text-sm cursor-pointer'>I agree with Terms of Use and Privacy Policy</label>
                             </div>
 
                             {/* Submit Button */}
@@ -128,7 +128,7 @@ function ContactForm() {
                                 data-aos="fade-up"
                                 data-aos-delay={250}
                                 disabled={isSubmitting}
-                                className='bg-primary-color py-2 px-5 rounded-md font-medium'
+                                className='bg-primary-color max-md:w-full py-2 px-5 rounded-md font-medium'
                             >
                                 Send Message
                             </button>
