@@ -4,10 +4,10 @@ const SlideSkeleton = () => {
     return (
         <div className='slide-skeleton p-3 rounded-md bg-card-color shadow-md space-y-2'>
             {/* Poster */}
-            <div className='poster h-80 bg-primary-color/20 animate-pulse rounded-md'></div>
+            <div className='poster h-80 bg-card-color animate-pulse rounded-md'></div>
             {/* Others */}
-            <div className='poster w-3/4 h-5 bg-primary-color/20 animate-pulse rounded-md'></div>
-            <div className='poster w-1/2 h-5 bg-primary-color/20 animate-pulse rounded-md'></div>
+            <div className='poster w-3/4 h-5 bg-card-color animate-pulse rounded-md'></div>
+            <div className='poster w-1/2 h-5 bg-card-color animate-pulse rounded-md'></div>
         </div>
     )
 }

@@ -15,6 +15,9 @@ export const endpoints = {
     TV_TOP_RATED: "/tv/top_rated",
     TV_SEASON: "/season",
 
+    // ### SEARCH:
+    SEARCH: '/search',
+
     // ### GLOBAL:
     IMAGES: "/images",
     REVIEWS: "/reviews",
