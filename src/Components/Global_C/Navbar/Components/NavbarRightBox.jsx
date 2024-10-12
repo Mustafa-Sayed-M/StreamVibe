@@ -7,7 +7,7 @@ function NavbarRightBox() {
         <div className='navbar-right-box flex items-center gap-2'>
             {/* Search Link */}
             <NavLink
-                to='/search?page=1&type=movie'
+                to='/search?page=1&type=movie&lang=en-US'
                 className={({ isActive }) => `text-xl ${isActive && "text-primary-color"}`}
             >
                 <i className="fa-solid fa-magnifying-glass fa-fw"></i>

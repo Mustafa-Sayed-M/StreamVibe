@@ -18,6 +18,9 @@ export const endpoints = {
     // ### SEARCH:
     SEARCH: '/search',
 
+    // ### TRENDING:
+    TRENDING: '/trending/movie/day',
+
     // ### GLOBAL:
     IMAGES: "/images",
     REVIEWS: "/reviews",

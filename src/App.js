@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import Aos from "aos";
 
 // Components:
@@ -16,8 +17,11 @@ import Subscriptions from "./Pages/Subscriptions/Subscriptions";
 import Movie from "./Pages/Movie/Movie";
 import Series from "./Pages/Series/Series";
 import Search from "./Pages/Search";
+import { GET_TRENDING_API } from "./Store/slices/trendingSlice";
 
 function App() {
+
+  const dispatch = useDispatch();
 
   useEffect(() => {
     Aos.init({
@@ -27,6 +31,10 @@ function App() {
       once: true
     })
   }, []);
+
+  useEffect(() => {
+    dispatch(GET_TRENDING_API());
+  }, [dispatch]);
 
   return (
     <div className="App min-h-screen bg-body-color text-white">

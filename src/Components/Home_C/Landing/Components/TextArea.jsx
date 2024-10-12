@@ -23,7 +23,7 @@ function TextArea() {
             </p>
             {/* Link Watch */}
             <Link
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-delay="200"
                 to={'/subscriptions'}
                 className='text-center py-3 px-5 bg-primary-color rounded-md font-medium block w-fit mx-auto'

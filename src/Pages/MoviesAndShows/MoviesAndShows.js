@@ -6,6 +6,7 @@ import { GET_MOVIES_API, GET_MOVIES_GENRES_API, GET_MOVIES_TOP_RATED_API, GET_MO
 import { GET_TV_API, GET_TV_GENRES_API, GET_TV_TOP_RATED_API, GET_TV_TRENDING_NOW_API, setTvDataFetched } from '../../Store/slices/tvSlice';
 import StartFreeTrial from '../../Components/Shared_C/StartFreeTrial';
 import NavContainer from '../../Components/MoviesAndShows_C/MediaContainers/NavContainer';
+import LandingTrending from '../../Components/MoviesAndShows_C/LandingTrending';
 
 function MoviesAndShows() {
 
@@ -13,6 +14,7 @@ function MoviesAndShows() {
 
     const moviesStore = useSelector(state => state.movies);
     const tvStore = useSelector(state => state.tv);
+    const [activeContainer, setActiveContainer] = useState("Movies");
 
     useEffect(() => { // Movies Data:
         const fetchShowsData = async () => {
@@ -41,13 +43,13 @@ function MoviesAndShows() {
         if (!moviesStore.dataFetched) fetchMoviesData();
     }, [dispatch, moviesStore.dataFetched]);
 
-    const [activeContainer, setActiveContainer] = useState("Movies");
-
     return (
         <div className='movies-and-shows-page pt-20 pb-10'>
             <div className='container space-y-5'>
                 {/* Main Content */}
                 <main className='space-y-10'>
+                    {/* Landing Trending */}
+                    <LandingTrending />
                     {/* Nav Containers */}
                     <NavContainer
                         activeContainer={activeContainer}

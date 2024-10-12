@@ -4,9 +4,9 @@ import { endpoints } from '../../Api/endpoints';
 export const SEARCH_API = createAsyncThunk('search/SEARCH_API', async (queryParams) => {
     try {
 
-        const { page, type, year, query } = queryParams;
+        const { page, type, year, lang, query } = queryParams;
 
-        const res = await fetch(`${endpoints.BASE_URL}${endpoints.SEARCH}/${type}?query=${query}&page=${page}&year=${year}&api_key=${process.env.REACT_APP_TMDB_API_KEY}`);
+        const res = await fetch(`${endpoints.BASE_URL}${endpoints.SEARCH}/${type}?query=${query}&language=${lang}&page=${page}&year=${year}&api_key=${process.env.REACT_APP_TMDB_API_KEY}`);
         const data = await res.json();
         return data;
     } catch (err) {
@@ -18,7 +18,7 @@ const searchSlice = createSlice({
     name: 'search',
     initialState: {
         page: 1,
-        results: [],
+        results: null,
         total_pages: 0,
         total_results: 0,
         error: null,

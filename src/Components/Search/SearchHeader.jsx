@@ -65,9 +65,14 @@ function SearchHeader() {
                     </button>
                 </div>
                 {/* Selects */}
-                <div className='selects grid grid-cols-1 sm:grid-cols-2 gap-3'>
+                <div className='selects grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3'>
                     {/* Select Type */}
-                    <div className='select-type'>
+                    <div className='select-type flex items-center gap-2'>
+                        {/* Icon */}
+                        <label htmlFor='type' className='cursor-pointer'>
+                            <i className="fa-solid fa-photo-film fa-fw text-xl"></i>
+                        </label>
+                        {/* Select */}
                         <select
                             name='type'
                             id='type'
@@ -81,7 +86,12 @@ function SearchHeader() {
                         </select>
                     </div>
                     {/* Select Year */}
-                    <div className='select-year'>
+                    <div className='select-year flex items-center gap-2'>
+                        {/* Icon */}
+                        <label htmlFor='year' className='cursor-pointer'>
+                            <i className="fa-regular fa-calendar fa-fw text-xl"></i>
+                        </label>
+                        {/* Select */}
                         <select
                             id='year'
                             name='year'
@@ -100,22 +110,39 @@ function SearchHeader() {
                             <option value={'2007'}>2007</option>
                             <option value={'2008'}>2008</option>
                             <option value={'2009'}>2009</option>
-                            <option value={'20010'}>20010</option>
-                            <option value={'20010'}>20010</option>
-                            <option value={'20011'}>20011</option>
-                            <option value={'20012'}>20012</option>
-                            <option value={'20013'}>20013</option>
-                            <option value={'20014'}>20014</option>
-                            <option value={'20015'}>20015</option>
-                            <option value={'20016'}>20016</option>
-                            <option value={'20017'}>20017</option>
-                            <option value={'20018'}>20018</option>
-                            <option value={'20019'}>20019</option>
+                            <option value={'2010'}>2010</option>
+                            <option value={'2011'}>2011</option>
+                            <option value={'2012'}>2012</option>
+                            <option value={'2013'}>2013</option>
+                            <option value={'2014'}>2014</option>
+                            <option value={'2015'}>2015</option>
+                            <option value={'2016'}>2016</option>
+                            <option value={'2017'}>2017</option>
+                            <option value={'2018'}>2018</option>
+                            <option value={'2019'}>2019</option>
                             <option value={'2020'}>2020</option>
                             <option value={'2021'}>2021</option>
                             <option value={'2022'}>2022</option>
                             <option value={'2023'}>2023</option>
                             <option value={'2024'}>2024</option>
+                        </select>
+                    </div>
+                    {/* Language */}
+                    <div className='select-lang flex items-center gap-2'>
+                        {/* Icon */}
+                        <label htmlFor='lang' className='cursor-pointer'>
+                            <i className="fa-solid fa-language fa-fw text-xl"></i>
+                        </label>
+                        {/* Select */}
+                        <select
+                            id='lang'
+                            name='lang'
+                            defaultValue={searchParams.get('lang')}
+                            onChange={handleSelectChange}
+                            className='focus:outline-none w-full rounded-md p-2 text-black-color font-medium border-2 focus:border-primary-color transition-colors cursor-pointer'
+                        >
+                            <option value={'en-Us'}>English</option>
+                            <option value={'ar-EG'}>Arabic</option>
                         </select>
                     </div>
                 </div>

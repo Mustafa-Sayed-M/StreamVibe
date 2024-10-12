@@ -8,7 +8,8 @@ import SkeletonMediaGrid from '../Components/MoviesAndShows_C/Skeletons/Skeleton
 
 function Search() {
 
-    const { results, loading } = useSelector(state => state.search);
+    const searchResults = useSelector(state => state.search);
+    const trendingResults = useSelector(state => state.trending);
 
     const dispatch = useDispatch();
     const [searchParams] = useSearchParams();
@@ -21,6 +22,7 @@ function Search() {
             year: searchParams.get('year'),
             query: searchParams.get('query'),
             type: searchParams.get('type'),
+            lang: searchParams.get('type'),
         }));
     }, [dispatch, searchParams]);
 
@@ -36,16 +38,24 @@ function Search() {
                 {/* Display Media */}
                 <div className='display-media space-y-3'>
                     {/* Heading */}
-                    <h1 className='font-bold text-2xl'>{results.length > 0 ? "Search Results" : "Other Content"}</h1>
+                    <h1 className='font-bold text-2xl'>{searchResults.results?.length > 0 ? <>
+                        <i className="fa-solid fa-magnifying-glass fa-fw me-2 text-primary-color"></i>
+                        <span>Search Results</span>
+                    </> : (<>
+                        <i className="fa-solid fa-arrow-trend-up fa-fw me-2 text-primary-color"></i>
+                        <span>Trending Today</span>
+                    </>)}</h1>
                     {
-                        results.length > 0 ? (
-                            loading ? (
+                        searchResults.results ? (
+                            searchResults.loading ? (
                                 <SkeletonMediaGrid />
+                            ) : !(searchResults.results?.length > 0) ? (
+                                <p className='p-2 font-bold text-center'><span className='text-primary-color'>Ops!</span> No Results 😢</p>
                             ) : (
-                                <MediaGrid mediaList={results || []} />
+                                <MediaGrid mediaList={searchResults.results} />
                             )
                         ) : (
-                            "Other Content"
+                            <MediaGrid mediaList={trendingResults.results} />
                         )
                     }
                 </div>

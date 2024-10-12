@@ -3,7 +3,7 @@ import { endpoints } from "../../Api/endpoints";
 
 export const GET_SERIES_API = createAsyncThunk("series/GET_SERIES_API", async (seriesId) => {
     try {
-        const res = await fetch(`${endpoints.BASE_URL}${endpoints.TV}/${seriesId}?api_key=${process.env.REACT_APP_TMDB_API_KEY}`);
+        const res = await fetch(`${endpoints.BASE_URL}${endpoints.TV}/${seriesId}?&api_key=${process.env.REACT_APP_TMDB_API_KEY}`);
         const data = await res.json();
         return data;
     } catch (err) {

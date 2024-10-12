@@ -20,13 +20,13 @@ function TvContainer({ activeContainer }) {
             {tvData.loading ?
                 <SliderSkeleton />
                 :
-                <MediaSlider mediaType={mediaType} mediaList={tvTopRatedData.data.results} titleSlider={"Discover"} />
+                <MediaSlider mediaType={mediaType} mediaList={tvData.data.results} titleSlider={"Discover"} />
             }
             {/* Trending Now */}
             {tvTrendingNowData.loading ?
                 <SliderSkeleton />
                 :
-                <MediaSlider mediaType={mediaType} mediaList={tvTopRatedData.data.results} titleSlider={"Trending Now"} />
+                <MediaSlider mediaType={mediaType} mediaList={tvTrendingNowData.data.results} titleSlider={"Trending Now"} />
             }
             {/* Top Rated */}
             {tvTopRatedData.loading ?

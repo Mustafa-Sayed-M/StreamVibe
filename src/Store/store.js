@@ -8,6 +8,7 @@ import seasonSlice from "./slices/seasonSlice";
 import faqSlice from "./slices/faqSlice";
 import plansSlice from "./slices/plansSlice";
 import searchSlice from "./slices/searchSlice";
+import trendingSlice from "./slices/trendingSlice";
 
 export const store = configureStore({
     reducer: {
@@ -19,6 +20,7 @@ export const store = configureStore({
         season: seasonSlice,
         faq: faqSlice,
         plans: plansSlice,
-        search: searchSlice
+        search: searchSlice,
+        trending: trendingSlice
     }
 });
