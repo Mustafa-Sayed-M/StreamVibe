@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/StreamVibe/static/css/main.5b1a2aab.css",
-    "main.js": "/StreamVibe/static/js/main.f755812b.js",
+    "main.js": "/StreamVibe/static/js/main.f4b12850.js",
     "static/js/453.2a82e7ac.chunk.js": "/StreamVibe/static/js/453.2a82e7ac.chunk.js",
     "static/media/fa-solid-900.ttf": "/StreamVibe/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/fa-brands-400.ttf": "/StreamVibe/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
@@ -13,11 +13,11 @@
     "static/media/fa-v4compatibility.woff2": "/StreamVibe/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/StreamVibe/index.html",
     "main.5b1a2aab.css.map": "/StreamVibe/static/css/main.5b1a2aab.css.map",
-    "main.f755812b.js.map": "/StreamVibe/static/js/main.f755812b.js.map",
+    "main.f4b12850.js.map": "/StreamVibe/static/js/main.f4b12850.js.map",
     "453.2a82e7ac.chunk.js.map": "/StreamVibe/static/js/453.2a82e7ac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5b1a2aab.css",
-    "static/js/main.f755812b.js"
+    "static/js/main.f4b12850.js"
   ]
 }
