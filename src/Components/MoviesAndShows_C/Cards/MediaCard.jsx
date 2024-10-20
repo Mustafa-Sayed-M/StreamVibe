@@ -38,7 +38,7 @@ function MediaCard({ mediaData }) {
         {/* Year Date Media */}
         <div className='year-date bg-body-color text-gray-color py-2 px-3 rounded-full flex items-center gap-1'>
           <i className="fa-solid fa-calendar-days fa-fw"></i>
-          <p>{(first_air_date || release_date).toString().slice(0, 4)}</p>
+          <p>{(first_air_date || release_date || "").toString().slice(0, 4)}</p>
         </div>
         {/* Rating Media */}
         <div className='year-date bg-body-color text-gray-color py-2 px-3 rounded-full flex items-center gap-1'>
