@@ -70,7 +70,7 @@ Stream-Vibe/
 
 # 🌟 Preview
 
-- 🔗 Live Demo: [Stream Vibe Live](http://localhost:3000/StreamVibe#/)
+- 🔗 Live Demo: [Stream Vibe Live](https://mustafa-sayed-m.github.io/StreamVibe/)
 
 # 📚 API Reference
 
