@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "quiz": "What is StreamVibe?",
+        "answer": "StreamVibe is an online streaming platform offering a wide selection of movies, TV shows, and exclusive content to suit all tastes"
+    },
+    {
+        "id": 2,
+        "quiz": "How much does StreamVibe cost?",
+        "answer": "StreamVibe offers multiple subscription plans starting from $9.99 per month. Choose the plan that fits your needs"
+    },
+    {
+        "id": 3,
+        "quiz": "What content is available on StreamVibe?",
+        "answer": "You can enjoy a variety of content, including blockbuster movies, popular TV shows, documentaries, and exclusive originals"
+    },
+    {
+        "id": 4,
+        "quiz": "How can I watch StreamVibe?",
+        "answer": "StreamVibe is accessible on multiple devices, including smart TVs, smartphones, tablets, and computers. Just log in and start streaming"
+    },
+    {
+        "id": 5,
+        "quiz": "How do I sign up for StreamVibe?",
+        "answer": "Signing up is easy! Visit our website, select a subscription plan, create an account, and start streaming your favorite content"
+    },
+    {
+        "id": 6,
+        "quiz": "What is the StreamVibe free trial?",
+        "answer": "StreamVibe offers a 7-day free trial for new users to explore the platform and enjoy all features without any charges"
+    },
+    {
+        "id": 7,
+        "quiz": "How do I contact StreamVibe customer support?",
+        "answer": "Our customer support team is available 24/7. You can reach us via email, live chat, or our toll-free number listed on the contact page"
+    },
+    {
+        "id": 8,
+        "quiz": "What are the StreamVibe payment methods?",
+        "answer": "We accept major credit/debit cards, PayPal, and other popular online payment methods for your convenience"
+    }
+]

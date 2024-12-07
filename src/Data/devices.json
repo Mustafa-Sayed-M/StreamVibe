@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Smartphones",
+        "description": "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store",
+        "imageNumPath": "1"
+    },
+    {
+        "id": 2,
+        "title": "Tablet",
+        "description": "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store",
+        "imageNumPath": "2"
+    },
+    {
+        "id": 3,
+        "title": "Smart TV",
+        "description": "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store",
+        "imageNumPath": "3"
+    },
+    {
+        "id": 4,
+        "title": "Laptops",
+        "description": "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store",
+        "imageNumPath": "4"
+    },
+    {
+        "id": 5,
+        "title": "Gaming Consoles",
+        "description": "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store",
+        "imageNumPath": "5"
+    },
+    {
+        "id": 6,
+        "title": "VR Headsets",
+        "description": "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store",
+        "imageNumPath": "6"
+    }
+]
