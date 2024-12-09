@@ -26,8 +26,8 @@ function SearchQuery() {
         if (inputQueryValue) {
             const newParam = new URLSearchParams(searchParams);
             newParam.set('query', inputQueryValue);
-            newParam.set('type', 'multi');
-            newParam.set('language', 'en-US');
+            newParam.set('type', searchParams.get('type') || 'multi');
+            newParam.set('language', searchParams.get('language') || 'en-US');
             setSearchParams(newParam);
         }
     };
