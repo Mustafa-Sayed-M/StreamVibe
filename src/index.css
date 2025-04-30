@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('/assets/fonts/manrope/manrope-v15-latin-200.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+    /* 200 */
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('/assets/fonts/manrope/manrope-v15-latin-300.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+    /* 300 */
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('/assets/fonts/manrope/manrope-v15-latin-500.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+    /* 500 */
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('/assets/fonts/manrope/manrope-v15-latin-600.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+    /* 600 */
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('/assets/fonts/manrope/manrope-v15-latin-700.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+    /* 700 */
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('/assets/fonts/manrope/manrope-v15-latin-800.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+    /* 800 */
+}
+
+
+/* Global */
+body {
+    font-family: "Manrope", sans-serif;
+}
+
+p {
+    color: #999999;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* Custom Selection */
+::selection {
+    color: white;
+    background-color: #E50000;
+}
+
+/* Swiper Custom Pagination */
+.custom-swiper-pagination {
+    transform: translateX(0) !important;
+    -webkit-transform: translateX(0) !important;
+    -moz-transform: translateX(0) !important;
+    -ms-transform: translateX(0) !important;
+    -o-transform: translateX(0) !important;
+}
+
+.custom-swiper-pagination span {
+    background-color: #E50000;
+    width: 10px;
+    height: 10px;
+}
+
+/* Swiper Genres */
+.media-genres .slider-wrapper::after {
+    top: 0;
+    right: 0;
+    content: '';
+    z-index: 100;
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    background-image: linear-gradient(to right, #141414, transparent);
+}
+
+.media-genres .slider-wrapper::after {
+    right: 0;
+    background-image: linear-gradient(to right, transparent, #141414);
+}
+
+/* Lazy Loading Image */
+.lazy-load-image-background {
+    width: 100%;
+}
